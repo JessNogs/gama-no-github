@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>.:Jessica Nogueira:. </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <img src="imagens/logo2.png" alt="Logo Jessica Nogueira">
+            </div>
+            <ul>
+                <li>
+                    <a target="blank" href="mailto:jessnogs97@gmail.com"> Email </a>
+                </li>
+                <li>
+                    <a target="blank" href="https://wa.me/24999588035"> WhatsApp </a>
+                </li>
+                <li>
+                    <a target="blank" href="https://www.linkedin.com/in/jessica-nogueira-272610166/"> Lindekin </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">  
+                <div class="nome">
+                    <h1>Jessica Nogueira</h1>
+                    <h5>Engenheira de Produção</h5>
+                </div> 
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+                </div>
+
+                <div style="display:none;" id="about">
+                    <p>
+                        Graduada em Engenharia de Produção, sou apaixonada por aprender e por novas experiências. Já trabalhei em empresas de grande porte e multinacionais por meio de estágios e programa de jovens talentos. Atuei nas áreas de Produção, Manutenção e Financeiro, adquirindo um conhecimento amplo e multidisciplinar que contribuiu para meu desenvolvimento profissional. Gosto de ler e escrever, sou uma pessoa comunicativa e tenho facilidade para aprender novas tarefas.
+Tenho destreza para aprender a utilizar novos sistemas corporativos e já trabalhei com SAP e TOTVS Protheus. No Excel, domino as funções de lógica, condicionais, formatação e tabelas dinâmicas além de combinações de funções. Estudo atualmente Power BI e tenho muito interesse em análise de dados e construção de indicadores.
+Possuo inglês intermediário com o qual consigo ler e escrever bem com poucas consultas ao dicionário. Realizo curso atualmente para aperfeiçoar a fala e a escuta.
+Adoro mudanças, sou proativa e organizada. Felicidade para mim é resolver problemas!
+                    </p>
+                </div> <br/>
+
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato!</p>
+                    </div>
+                    <br/>
+                    <form action="">
+                        <input type="text" placeholder="exempo@exemplo.com">
+                        <button>Enviar!</button>
+                    </form>
+                </div>
+                <br/>
+
+            </section>
+        </main>
+        <script>
+            function displayAbout(){
+                var arrow= document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display= document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+
+</html>
