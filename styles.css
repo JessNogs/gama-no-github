@@ -27,8 +27,12 @@ header ul li{
 header ul li a:hover{
     color:cornflowerblue;
     text-decoration:underline;
-
 }
+header ul li img{
+    max-width:50px;
+    max-height: 50px;
+}
+
 /* IMAGEM DE FUNDO */
 body{
     
@@ -44,11 +48,24 @@ body{
 /* NOME PRINCIPAL */
 .container .nome h1{
     font-size:60px;
+    color:#191970;
+    text-shadow: 2px 2px 2px white;
 }
 /* SUBTITULO DO NOME */
 .container .nome h5{
     font-size:25px;
     font-style:italic;
+    color:#000080;
+}
+/* MINHA FOTO */
+#minha_foto img{
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-style: double;
+    border-color: #191970;
+    margin-top: 30px;
+    box-shadow: 1px 1px 10px 1px;
 }
 
 /* ÍCONE SETA */
@@ -78,21 +95,42 @@ body{
 #about p{
     max-width: 1000px;
     margin:0 auto;
+    margin-bottom: 30px;
 }
 
 /* INFORMAÇÕES PESSOAIS */
-#info{
-    display:flex;
-    justify-content:space-evenly;
+
+.cursos img{
+    max-width:150px;
+    max-height: 150px;
 }
-#info p{
-    max-width: 300px;
-    text-align: center;
+.cursos ul li{
+    list-style: circle;
+    text-align: left;
 }
-#info div ul{
-    max-width: 500px;
-    text-align:left;
-    list-style:circle;
+.cursos p{
+    font-weight: bold;
+}
+
+.passatempo img{
+    max-width:150px;
+    max-height: 150px;
+}
+
+.passatempo ul li{
+    list-style: circle;
+    text-align: left;
+}
+.passatempo p{
+    font-weight: bold;
+}
+
+#infos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    margin-left: 60px;
+    
 }
 
 /* DEIXE SEU CONTATO */
@@ -100,6 +138,11 @@ body{
     width:40%;
     margin:0 auto;
 }
+
+.form p{
+    font-weight: bold;
+}
+
 .form input{
     width:50%;
     padding: 5px 10px;
