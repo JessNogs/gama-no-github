@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+}
+/* LINKS REDES SOCIAIS */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding:10px;
+}
+header ul li a:hover{
+    color:cornflowerblue;
+    text-decoration:underline;
+
+}
+/* IMAGEM DE FUNDO */
+body{
+    
+    background-image: url(./imagens/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+/* CONTEÚDO TODO */
+.container{
+    text-align: center;
+}
+/* NOME PRINCIPAL */
+.container .nome h1{
+    font-size:60px;
+}
+/* SUBTITULO DO NOME */
+.container .nome h5{
+    font-size:25px;
+    font-style:italic;
+}
+
+/* ÍCONE SETA */
+#arrow{
+    font-size: 35px;
+    cursor:pointer;
+    animation: blink 2s steps(5,start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform:rotate(180deg);
+    transition:300ms;
+}
+.active{
+    display:block !important;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+#about p{
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+/* INFORMAÇÕES PESSOAIS */
+#info{
+    display:flex;
+    justify-content:space-evenly;
+}
+#info p{
+    max-width: 300px;
+    text-align: center;
+}
+#info div ul{
+    max-width: 500px;
+    text-align:left;
+    list-style:circle;
+}
+
+/* DEIXE SEU CONTATO */
+.form{
+    width:40%;
+    margin:0 auto;
+}
+.form input{
+    width:50%;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.form button{
+    width:15%;
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    color: #464646;
+    font-weight: 600;
+    border: none;
+    cursor:pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left:-4px;
+    margin-top:10px;
+}
+
+.form button:hover{
+    background-color: #464646;
+    color:darkblue;
+}
+
+@media only screen and (max-width: 480px) {
+    #about p {
+        max-width:80%;
+    }
+}
