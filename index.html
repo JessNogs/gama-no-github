@@ -87,8 +87,13 @@ Adoro mudanças, sou proativa e organizada. Felicidade para mim é resolver prob
                     <br/>
                     <form action="">
                         <input type="text" placeholder="exempo@exemplo.com">
-                        <button>Enviar!</button>
+                        <button type="submit" onclick="alerta()" > Enviar! </button>
                     </form>
+
+                    <div id="alerta" style="display:none" role="alert">
+                        Email enviado com sucesso!
+                    </div>
+
                 </div>
                 <br/>
 
@@ -102,6 +107,7 @@ Adoro mudanças, sou proativa e organizada. Felicidade para mim é resolver prob
                 display.classList.toggle('active');
             }
         </script>
+        <script src="script1.js"></script>
 
     </body>
 

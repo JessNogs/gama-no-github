@@ -171,6 +171,9 @@ body{
 
 @media only screen and (max-width: 480px) {
     #about p {
-        max-width:80%;
+        font-size: 15px;
+    }
+    #cursos ul li{
+        max-width: 80%;
     }
 }
